@@ -19,14 +19,19 @@ Use console.log() to clearly show the before-and-after type conversions.
 */
 
 
-let result = "5" - 2;
-console.log("The result is: " + result);
+let result = Number("5") - 2; // this is a explicit type conversion to make. This will make string "5" to number.
+console.log("The result is: " + result); // the result will be 3
 
-let isValid = Boolean("false");
+
 if (isValid) {
-    console.log("This is valid!");
+    console.log("This is valid!"); // I have removed the isValid declaration to provide example for undefined use case
 }
 
-let age = "25";
+let age = Number("25"); // this is a explicit type conversion to make. This will make string "5" to number.
 let totalAge = age + 5;
-console.log("Total Age: " + totalAge);
+console.log("Total Age: " + totalAge); // the result will be 25
+
+
+//implicit example
+let result = "5" + 2; // this is a implicit type conversion to make. This will make string "2" to number.
+console.log("The result is: " + result); // the result will be 52
